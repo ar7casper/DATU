@@ -10,11 +10,11 @@ function setHeight(){
 	var height = [];
 
 	for (var i=0; i<3 ;i++){  //need to change the 3 to the numbers of rows
-	height[i]=$('.daImg' +(i+1)).height();
+	height[i]=$('.daImg' +(i+1) + ' img').height();
 	}
 
 	for (var i=0; i<3; i++){
-	    $('.daSmall').eq(0).css('height',height[0]);
+	    $('.daSmall').eq(i).css('height',height[i]);
 	}
 }
 $(window).load(function(){

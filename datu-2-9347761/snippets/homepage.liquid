@@ -20,13 +20,13 @@
 		{% capture daClass %} class="grid__item large--seven-tenths small--one-whole daBig daLookbook daImg2" {% endcapture %}
 		{% when 'styling online' %}
 		{% assign content = '<p>Styling</p><p> Online</p>' %}
-		{% capture daClass %} class="grid__item large--three-tenths small--one-whole daSmall daStylingOnline daImg3" {% endcapture %}
+		{% capture daClass %} class="grid__item large--three-tenths small--one-whole daSmall daStylingOnline " {% endcapture %}
 		{% when 'gallery' %}
 		{% capture content %}<img src="{{ 'gallery.jpg' | asset_url }}" alt="">{% endcapture %}
 		{% capture daClass %} class="grid__item large--three-tenths small--one-whole daSmall daGallery clear" {% endcapture %}
 		{% when 'blog' %}
 		{% capture content %}<img src="{{ 'blog.jpg' | asset_url }}" alt="">{% endcapture %}
-		{% capture daClass %} class="grid__item large--seven-tenths small--one-whole daBig daBlog" {% endcapture %}
+		{% capture daClass %} class="grid__item large--seven-tenths small--one-whole daBig daBlog daImg3" {% endcapture %}
 	{% endcase %}
 	
 	<li {{daClass}} > 
