@@ -19,4 +19,5 @@ function setHeight(){
 }
 $(window).load(function(){
 setHeight();
+$('.hid').hide();
 });
