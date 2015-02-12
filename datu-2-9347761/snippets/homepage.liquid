@@ -13,8 +13,8 @@
 		{% capture content %} <p>30% Off</p> {% endcapture %}
 		{% capture daClass %} class="grid__item large--three-tenths small--one-whole daSmall daSale" {% endcapture %}
 		{% when 'new' %}
-		{% capture content %}<img src="{{ 'new.jpg' | asset_url }}" alt="">{% endcapture %}
-		{% capture daClass %} class="grid__item grid__item large--seven-tenths small--one-whole daBig daImg1" {% endcapture %}
+		{% capture content %}<img src="{{ 'new.jpg' | asset_url }}" alt="" /><div class="holder"><div class="new">New</div><img class='triangleWhite' src="{{ 'triangleWhite.png' | asset_url }}" /></div>{% endcapture %}
+		{% capture daClass %} class="grid__item grid__item large--seven-tenths small--one-whole daBig daImg1 daNew" {% endcapture %}
 		{% when 'lookbook' %}
 		{% capture content %}<img src="{{ 'lookbook.jpg' | asset_url }}" alt="">{% endcapture %}
 		{% capture daClass %} class="grid__item large--seven-tenths small--one-whole daBig daLookbook daImg2" {% endcapture %}

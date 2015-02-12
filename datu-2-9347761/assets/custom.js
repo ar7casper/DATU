@@ -21,3 +21,4 @@ $(window).load(function(){
 setHeight();
 $('.hid').hide();
 });
+
