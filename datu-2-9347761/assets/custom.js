@@ -22,3 +22,7 @@ setHeight();
 $('.hid').hide();
 });
 
+// Resize Functions
+$(window).resize(function(){
+	setHeight();
+});

@@ -16,7 +16,7 @@
 		{% capture content %}<img src="{{ 'new.jpg' | asset_url }}" alt="" /><div class="holder"><div class="new">New</div><img class='triangleWhite' src="{{ 'triangleWhite.png' | asset_url }}" /></div>{% endcapture %}
 		{% capture daClass %} class="grid__item grid__item large--seven-tenths small--one-whole daBig daImg1 daNew" {% endcapture %}
 		{% when 'lookbook' %}
-		{% capture content %}<img src="{{ 'lookbook.jpg' | asset_url }}" alt="">{% endcapture %}
+		{% capture content %}<img src="{{ 'lookbook.jpg' | asset_url }}" alt=""><div class="holder"><div class="lookbook">Lookbook</div><img class='triangleWhite' src="{{ 'triangleWhite.png' | asset_url }}" /></div>{% endcapture %}
 		{% capture daClass %} class="grid__item large--seven-tenths small--one-whole daBig daLookbook daImg2" {% endcapture %}
 		{% when 'styling online' %}
 		{% assign content = '<p>Styling</p><p> Online</p>' %}

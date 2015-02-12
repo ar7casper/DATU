@@ -2310,6 +2310,7 @@ width: 100%;
 }
 .daBig img {
 width: 100%;
+display:block;
 }
 .daNewText {
 position: absolute;
@@ -2325,13 +2326,10 @@ li {
   position:relative;
 }
 .homeGrid li a {
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
+  position:relative;
   text-decoration: none;
   color:white;
+  display:block;
 }
 
 .daImg2 a {
@@ -2358,13 +2356,35 @@ font-family: 'Dosis';
 font-size: 10vw;
 direction: ltr;
 }
-.daNew .holder {
+.daNew .holder, {
 position: absolute;
 top: 0;
+left: 2%;
+}
+.daLookbook .holder {
+position: absolute;
+bottom: 0;
 left: 2%;
 }
 .new {
 font-size: 11vw;
 font-family: 'Dosis';
-line-height: 9vw;
+line-height: 10vw;
+}
+.lookbook {
+font-size: 6vw;
+font-family: 'Dosis';
+line-height: 6vw;
+padding-bottom: 1%;
+}
+.daNew img.triangleWhite, .daLookbook img.triangleWhite{
+width: auto;
+float: left;
+margin-left: 3%;
+}
+.daLookbook img.triangleWhite {
+padding-bottom: 14%;
+display: block;
+width: 10%;
+margin-left: 2%;
 }
