@@ -2313,9 +2313,19 @@ width: 100%;
 display:block;
 }
 .sectionImage {
-background: url(//cdn.shopify.com/s/files/1/0732/3507/t/2/assets/new.jpg?14577398901236175629) no-repeat;
-background-size: 100% 100%;
-height: 35vw;
+  height: 35vw;
+}
+.daNew .sectionImage {
+  background: url({{ 'new.jpg' | asset_url }}) no-repeat 100% 100%;
+}
+.daLookbook .sectionImage {
+  background: url({{ 'lookbook.jpg' | asset_url }}) no-repeat 100% 100%;
+}
+.daGallery .sectionImage {
+  background: url({{ 'gallery.jpg' | asset_url }}) no-repeat 100% 100%;
+}
+.daBlog .sectionImage {
+  background: url({{ 'blog.jpg' | asset_url }}) no-repeat 100% 100%;
 }
 .daNewText {
 position: absolute;
