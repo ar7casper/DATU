@@ -6,27 +6,27 @@
 	<li class="daSmall daGallery"><img src="" alt=""></li>
 	<li class="daMenuItem daBig"><img src="" alt=""></li>
 </ul>  -->
-<ul>
+<ul class="homeGrid">
 {% for link in linklists.homepage.links %}
 	{% case link.title %}
 		{% when 'sale' %}
 		{% capture content %} <p>30% Off</p> {% endcapture %}
 		{% capture daClass %} class="grid__item large--three-tenths small--one-whole daSmall daSale" {% endcapture %}
 		{% when 'new' %}
-		{% capture content %}<img src="{{ 'new.jpg' | asset_url }}" alt="">{% endcapture %}
-		{% capture daClass %} class="grid__item grid__item large--seven-tenths small--one-whole daBig daImg1" {% endcapture %}
+		{% capture content %}<div class="sectionImage" ></div><div class="holder"><div class="new">New</div><img class='triangleWhite' src="{{ 'triangleWhite.png' | asset_url }}" /></div>{% endcapture %}
+		{% capture daClass %} class="grid__item grid__item large--seven-tenths small--one-whole daBig daImg1 daNew" {% endcapture %}
 		{% when 'lookbook' %}
-		{% capture content %}<img src="{{ 'lookbook.jpg' | asset_url }}" alt="">{% endcapture %}
+		{% capture content %}<div class="sectionImage" ></div><div class="holder"><div class="lookbook">Lookbook</div><img class='triangleWhite' src="{{ 'triangleWhite.png' | asset_url }}" /></div>{% endcapture %}
 		{% capture daClass %} class="grid__item large--seven-tenths small--one-whole daBig daLookbook daImg2" {% endcapture %}
 		{% when 'styling online' %}
 		{% assign content = '<p>Styling</p><p> Online</p>' %}
-		{% capture daClass %} class="grid__item large--three-tenths small--one-whole daSmall daStylingOnline daImg3" {% endcapture %}
+		{% capture daClass %} class="grid__item large--three-tenths small--one-whole daSmall daStylingOnline " {% endcapture %}
 		{% when 'gallery' %}
-		{% capture content %}<img src="{{ 'gallery.jpg' | asset_url }}" alt="">{% endcapture %}
-		{% capture daClass %} class="grid__item large--three-tenths small--one-whole daSmall daGallery clear" {% endcapture %}
+		{% capture content %}<div class="sectionImage" ></div><div class="holder"><div class="gallery">Gallery</div><img class='triangleBlack' src="{{ 'triangle.png' | asset_url }}" /></div>{% endcapture %}
+		{% capture daClass %} class="grid__item large--four-tenths small--one-whole daSmall daGallery clear" {% endcapture %}
 		{% when 'blog' %}
-		{% capture content %}<img src="{{ 'blog.jpg' | asset_url }}" alt="">{% endcapture %}
-		{% capture daClass %} class="grid__item large--seven-tenths small--one-whole daBig daBlog" {% endcapture %}
+		{% capture content %}<div class="sectionImage" ></div><div class="holder"><div class="blog">Blog</div><img class='triangleBlack' src="{{ 'triangle.png' | asset_url }}" /></div>{% endcapture %}
+		{% capture daClass %} class="grid__item large--six-tenths small--one-whole daBig daBlog daImg3" {% endcapture %}
 	{% endcase %}
 	
 	<li {{daClass}} > 
@@ -39,39 +39,7 @@
 {% endfor %}
 </ul>
 
-<div class="grid">
-	<div class="grid__item row1">
-		<div class="grid daHeight">
-			<div class="grid__item large--three-tenths small--one-whole daSmall daSale">
-				<p>30% Off</p>
-			</div>
-			<div class="grid__item grid__item large--seven-tenths small--one-whole daBig">
-			<div class="daNewText">New</div>
-				<img src="{{ 'new.jpg' | asset_url }}" alt="">
-			</div>
-		</div>
-	</div>
-	<div class="grid__item row2">
-		<div class="grid daHeight">
-			<div class="grid__item large--seven-tenths small--one-whole daBig daLookbook">
-				<img src="{{ 'lookbook.jpg' | asset_url }}" alt="">
-			</div>
-			<div class="grid__item large--three-tenths small--one-whole daSmall daStylingOnline">
-				<p>Styling</p><p> Online</p>
-			</div>
-		</div>
-	</div>
-	<div class="grid__item row3">
-		<div class="grid">
-			<div class="grid__item large--three-tenths small--one-whole daSmall daGallery">
-				<img src="{{ 'gallery.jpg' | asset_url }}" alt="">
-			</div>
-			<div class="grid__item large--seven-tenths small--one-whole daBig daBlog">
-				<img src="{{ 'blog.jpg' | asset_url }}" alt="">
-			</div>
-		</div>
-	</div>
-</div>
+<div class="hid"><span>LOADING...</span></div>
 
 <!-- <div class="grid">
 	<div class="grid__item">
