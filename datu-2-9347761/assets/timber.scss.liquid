@@ -2314,18 +2314,23 @@ display:block;
 }
 .sectionImage {
   height: 35vw;
+  
 }
 .daNew .sectionImage {
-  background: url({{ 'new.jpg' | asset_url }}) no-repeat 100% 100%;
+  background: url({{ 'new.jpg' | asset_url }}) no-repeat;
+  background-size: cover;
 }
 .daLookbook .sectionImage {
-  background: url({{ 'lookbook.jpg' | asset_url }}) no-repeat 100% 100%;
-}
+  background: url({{ 'lookbook.jpg' | asset_url }}) no-repeat;
+  background-size: cover;
+ }
 .daGallery .sectionImage {
-  background: url({{ 'gallery.jpg' | asset_url }}) no-repeat 100% 100%;
+  background: url({{ 'gallery.jpg' | asset_url }}) no-repeat;
+  background-size: cover;
 }
 .daBlog .sectionImage {
-  background: url({{ 'blog.jpg' | asset_url }}) no-repeat 100% 100%;
+  background: url({{ 'blog.jpg' | asset_url }}) no-repeat;
+  background-size: cover;
 }
 .daNewText {
 position: absolute;
