@@ -2307,6 +2307,7 @@ width: 100%;
  padding-left:0;
  position:relative; 
  margin-bottom:0;
+ height:35vw;
 }
 .daBig img {
 width: 100%;
@@ -2316,22 +2317,44 @@ display:block;
   height: 35vw;
   
 }
-.daNew .sectionImage {
+/* **********************
+****** Normal Images *****
+************************* */
+.daNew {
   background: url({{ 'new.jpg' | asset_url }}) no-repeat;
   background-size: cover;
 }
-.daLookbook .sectionImage {
+.daLookbook {
   background: url({{ 'lookbook.jpg' | asset_url }}) no-repeat;
   background-size: cover;
  }
-.daGallery .sectionImage {
+.daGallery {
   background: url({{ 'gallery.jpg' | asset_url }}) no-repeat;
   background-size: cover;
 }
-.daBlog .sectionImage {
+.daBlog {
   background: url({{ 'blog.jpg' | asset_url }}) no-repeat;
   background-size: cover;
 }
+/* **********************
+****** Hover Images *****
+************************* */
+.daNew:hover {
+  background: url({{ 'newHover.jpg' | asset_url }}) no-repeat;
+  background-size:cover;
+}
+.daLookbook:hover {
+  background: url({{ 'lookbookHover.jpg' | asset_url }}) no-repeat;
+  background-size:cover;
+ }
+.daGallery:hover {
+  background: url({{ 'galleryHover.jpg' | asset_url }}) no-repeat;
+  background-size:cover;
+}
+.daBlog:hover {
+  background: url({{ 'blogHover.jpg' | asset_url }}) no-repeat;
+  background-size:cover;
+  }
 .daNewText {
 position: absolute;
 color: white;
