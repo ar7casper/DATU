@@ -23,10 +23,10 @@
 		{% capture daClass %} class="grid__item large--three-tenths small--one-whole daSmall daStylingOnline " {% endcapture %}
 		{% when 'gallery' %}
 		{% capture content %}<img src="{{ 'gallery.jpg' | asset_url }}" alt=""><div class="holder"><div class="gallery">Gallery</div><img class='triangleBlack' src="{{ 'triangle.png' | asset_url }}" /></div>{% endcapture %}
-		{% capture daClass %} class="grid__item large--three-tenths small--one-whole daSmall daGallery clear" {% endcapture %}
+		{% capture daClass %} class="grid__item large--four-tenths small--one-whole daSmall daGallery clear" {% endcapture %}
 		{% when 'blog' %}
 		{% capture content %}<img src="{{ 'blog.jpg' | asset_url }}" alt=""><div class="holder"><div class="blog">Blog</div><img class='triangleBlack' src="{{ 'triangle.png' | asset_url }}" /></div>{% endcapture %}
-		{% capture daClass %} class="grid__item large--seven-tenths small--one-whole daBig daBlog daImg3" {% endcapture %}
+		{% capture daClass %} class="grid__item large--six-tenths small--one-whole daBig daBlog daImg3" {% endcapture %}
 	{% endcase %}
 	
 	<li {{daClass}} > 
