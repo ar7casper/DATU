@@ -56,11 +56,23 @@ function setHover(){
 
 $(window).load(function(){
 	setHeight();
+	datuVip();
 	$('.hid').hide();
 });
 
 // Resize Functions
 $(window).resize(function(){
 	setHeight();
+	datuVip();
 });
 
+// Footer
+function datuVip (){
+	var form = $('form#mc-embedded-subscribe-form');
+	var formSpan = form.find(' span.input-group-btn');
+	var leftPosition = formSpan.position().left;
+	var img = form.find('img');
+
+	img.css('left',leftPosition);
+
+}
