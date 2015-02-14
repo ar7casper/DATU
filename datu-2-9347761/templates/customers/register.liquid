@@ -41,7 +41,7 @@
       <label for="CreatePassword" class="label--hidden">{{ 'customer.register.password' | t }}</label>
       <input type="password" name="customer[password]" id="CreatePassword" placeholder="{{ 'customer.register.password' | t }}" {% if form.errors contains "password" %} class="error"{% endif %}>
       
-      <input type="date" name="customer[birthday]" id="Birthday" placeholder="{{ 'customer.register.birthday' |t }}">
+      
       <p>
         <input type="submit" value="{{ 'customer.register.submit' | t }}" class="btn">
       </p>
