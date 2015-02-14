@@ -880,6 +880,8 @@ hr {
 .daHeader{
   text-align: center;
   background-color:#ccc;
+  position: relative;
+  z-index: 10;
 }
 p.site-header__text-links {
 display: inline;
@@ -1840,6 +1842,8 @@ padding: 1px 5px;
 .site-nav {
   font-size: em(16px);
   cursor: default;
+  position: relative;
+  z-index: 10;
 
   li {
     margin: 0;
@@ -2466,4 +2470,26 @@ line-height:6vw;
   font-family:'Dosis';
   color:black;
   line-height:6vw;
+}
+/* ***************************** */
+/* **** Create Account Page **** */            
+/* ***************************** */
+#create-account h1 {
+font-size: 2vw;
+text-align: right;
+}
+#create_customer .btn {
+width: 100%;
+}
+img#createAccountLeft {
+position: absolute;
+left: 0;
+top: 13%;
+width:21%;
+}
+img#createAccountRight {
+position: absolute;
+top: 0;
+right: 5%;
+width: 15%;
 }

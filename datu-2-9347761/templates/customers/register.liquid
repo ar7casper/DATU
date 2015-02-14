@@ -1,4 +1,6 @@
 <!-- /templates/customers/register.liquid -->
+<img id="createAccountLeft" src="{{ 'create_account_left.png' | asset_url }}"></img>
+    <img id="createAccountRight" src="{{ 'create_account_right.png' | asset_url}}"></img>
 {% comment %}
 
   This template will be automatically generated for you if the file doesn't exist,
@@ -16,12 +18,13 @@
 <div class="grid">
 
   <div class="grid__item large--one-third push--large--one-third text-center">
-
+    
     <h1>{{ 'customer.register.title' | t }}</h1>
 
     {% comment %}
       This form must use 'create_customer'
     {% endcomment %}
+
     {% form 'create_customer' %}
 
       {{ form.errors | default_errors }}
@@ -37,7 +40,8 @@
 
       <label for="CreatePassword" class="label--hidden">{{ 'customer.register.password' | t }}</label>
       <input type="password" name="customer[password]" id="CreatePassword" placeholder="{{ 'customer.register.password' | t }}" {% if form.errors contains "password" %} class="error"{% endif %}>
-
+      
+      
       <p>
         <input type="submit" value="{{ 'customer.register.submit' | t }}" class="btn">
       </p>
