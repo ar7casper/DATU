@@ -37,7 +37,7 @@
     {% form 'customer_login' %}
 
       <h1>{{ 'customer.login.title' | t }}</h1>
-
+      <div class="subText">כניסה לחשבון קיים:</div>
       {{ form.errors | default_errors }}
 
       <label for="CustomerEmail" class="label--hidden">{{ 'customer.login.email' | t }}</label>
@@ -60,7 +60,8 @@
       <a href="{{ shop.url }}">{{ 'customer.login.cancel' | t }}</a>
 
     {% endform %}
-
+    <a id='signup' href='/account/register'>פעם ראשונה פה? הרשמי לאתר</a>
+    
     {% comment %}
       This page uses JavaScript to show/hide the recover password form
     {% endcomment %}
