@@ -1584,7 +1584,7 @@ padding: 1px 5px;
 .icon-american_express:before { content: "\41"; }
 .icon-arrow-down:before { content: "\34"; }
 .icon-bitcoin:before { content: "\42"; }
-.icon-cart:before { content: "\5b"; }
+.icon-cart:before { content: ""; } <!-- \5b -->
 .icon-cirrus:before { content: "\43"; }
 .icon-diners_club:before { content: "\63"; }
 .icon-discover:before { content: "\44"; }
@@ -1910,7 +1910,8 @@ padding: 1px 5px;
 /*================ Search bar in header ================*/
 .nav-search {
   position: relative;
-  padding: 7px 0;
+  /* padding: 7px 0; */
+  margin-bottom:8px;
 
   @include at-query ($max, $medium) {
     padding: 0 0 ($gutter / 2);
@@ -2245,7 +2246,9 @@ float: right;
 margin-left: 0;
 margin-right: 0;
 }
-
+.wrapper > div {
+margin-top: 8px;
+}
 /* ******************* */
 /* **** Home Page **** */            
 /* ******************* */
