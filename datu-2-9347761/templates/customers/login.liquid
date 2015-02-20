@@ -17,7 +17,8 @@
 {% endcomment %}
 
 {% layout settings.customer_layout %}
-
+<img id="yes" src="{{ 'yes.png' | asset_url }}">
+<img id = "loginPic" src=" {{ 'login.png' | asset_url }}">
 <div class="grid">
 
   <div class="grid__item large--one-third push--large--one-third text-center">
@@ -37,7 +38,7 @@
     {% form 'customer_login' %}
 
       <h1>{{ 'customer.login.title' | t }}</h1>
-
+      <div class="subText">כניסה לחשבון קיים:</div>
       {{ form.errors | default_errors }}
 
       <label for="CustomerEmail" class="label--hidden">{{ 'customer.login.email' | t }}</label>
@@ -60,7 +61,8 @@
       <a href="{{ shop.url }}">{{ 'customer.login.cancel' | t }}</a>
 
     {% endform %}
-
+    <a id='signup' href='/account/register'>פעם ראשונה פה? הרשמי לאתר</a>
+    
     {% comment %}
       This page uses JavaScript to show/hide the recover password form
     {% endcomment %}
