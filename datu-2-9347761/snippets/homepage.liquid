@@ -1,11 +1,4 @@
-<!-- <ul class="daMenuList">
-	<li class="daSmall daSale">30% Off</li>
-	<li class="daNew daBig"><img src="{{ 'new.jpg' | asset_url }}" alt=""></li>
-	<li class="daLookbook daBig"><img src="{{ 'lookbook.jpg' | asset_url }}" alt=""></li>
-	<li class="daSmall daStylingOnline">Styling Online</li>
-	<li class="daSmall daGallery"><img src="" alt=""></li>
-	<li class="daMenuItem daBig"><img src="" alt=""></li>
-</ul>  -->
+
 <ul class="homeGrid">
 {% for link in linklists.homepage.links %}
 	{% case link.title %}
@@ -50,42 +43,3 @@
 
 <!-- End of Hover Image -->
 
-
-<!-- <div class="grid">
-	<div class="grid__item">
-		<div class="grid__item">
-			<div class="grid row1">
-			<div class="grid__item large--three-tenths small--one-whole daSmall daSale">
-				<p>30% Off</p>
-			</div>
-			<div class="grid__item large--seven-tenths small--one-whole daBig">
-				<img src="{{ 'new.jpg' | asset_url }}" alt="">
-			
-		</div>
-	</div>
-</div>
-<div class="grid__item">
-	<div class="grid row2">
-
-			<div class="grid__item large--seven-tenths daNew">
-				<img src="{{ 'new.jpg' | asset_url }}" alt="">
-			
-		</div>
-		<div class="grid__item large--three-tenths daSmall daSale">
-				<p>Styling Online</p>
-			</div>
-	</div>
-</div>
-<div class="grid__item">
-	<div class="grid__item">
-		<div class="grid row3"><div class="grid__item large--three-tenths daSmall daSale">
-				<p>30% Off</p>
-			</div>
-			<div class="grid__item large--seven-tenths">
-				<img src="{{ 'new.jpg' | asset_url }}" alt="">
-			
-		</div>
-	</div>
-	</div>
-</div>
-</div>
