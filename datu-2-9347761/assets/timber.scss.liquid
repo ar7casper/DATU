@@ -885,6 +885,7 @@ hr {
 }
 p.site-header__text-links {
 display: inline;
+padding-right:4%;
 }
 #stylingOnline{
   font-size:16px;
@@ -1584,7 +1585,7 @@ padding: 1px 5px;
 .icon-american_express:before { content: "\41"; }
 .icon-arrow-down:before { content: "\34"; }
 .icon-bitcoin:before { content: "\42"; }
-.icon-cart:before { content: "\5b"; }
+.icon-cart:before { content: ""; } <!-- \5b -->
 .icon-cirrus:before { content: "\43"; }
 .icon-diners_club:before { content: "\63"; }
 .icon-discover:before { content: "\44"; }
@@ -1910,7 +1911,8 @@ padding: 1px 5px;
 /*================ Search bar in header ================*/
 .nav-search {
   position: relative;
-  padding: 7px 0;
+  /* padding: 7px 0; */
+  margin-bottom:8px;
 
   @include at-query ($max, $medium) {
     padding: 0 0 ($gutter / 2);
@@ -2245,7 +2247,49 @@ float: right;
 margin-left: 0;
 margin-right: 0;
 }
-
+.wrapper > div {
+margin-top: 8px;
+}
+.site-header__logo:hover{
+  background: url({{ 'logoHover.jpg' | asset_url }}) no-repeat;
+  background-position: 36%;
+}
+.site-nav--active {
+background: url({{ 'menuHover.jpg' | asset_url }}) no-repeat;
+background-position: 36%;
+}
+.site-nav>li:hover {
+  background: url({{ 'menuHover.jpg' | asset_url }}) no-repeat;
+background-position: 36%;
+}
+input[type='search']::-webkit-input-placeholder {
+color: black;
+}
+.nav-search .input-group-btn {
+display: none;
+}
+.nav-search input[type='search'] {
+background-color: transparent;
+}
+.wrapper div:last-child {
+padding-left: 0;
+}
+#wrapSearch {
+  width:auto;
+  float:right;
+}
+#wrapCart {
+  width:190px;
+  float:right;
+  padding-left:0;
+}
+#wrapShipping{
+  float:left;
+  width:auto;
+}
+#wrapCart a {
+text-decoration: none;
+}
 /* ******************* */
 /* **** Home Page **** */            
 /* ******************* */

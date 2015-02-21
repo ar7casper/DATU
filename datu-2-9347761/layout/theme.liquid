@@ -68,15 +68,12 @@ Add the page template as a class for easy page or template specific styling.
 <body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" >
   <div class='daHeader grid--full'>
     <div class="wrapper">
-      <div class="grid__item large--one-half text-center large--text-left">
+          <!-- large--one-sixth -->
+      <div id="wrapShipping" class="grid__item  text-center large--text-left"> <!-- large--one-half -->
         משלוחים והחזרות חינם 054-7936030
       </div>
-       <div class="grid__item large--one-quarter text-center large--text-right">
-         <div class="nav-search">
-          {% include 'search-bar' %}
-        </div>
-      </div>
-      <div class="grid__item large--one-quarter text-center large--text-right">{% comment %}
+
+      {% comment %}
         Show number of items in the cart and total cost in the /cart link
 
         Ajaxify Cart Notes:
@@ -85,6 +82,11 @@ Add the page template as a class for easy page or template specific styling.
         - #cartCost updates the total cost of the cart
         - Documentation:  http://shopify.com/timber#ajax-cart
         {% endcomment %}
+        
+
+         
+      
+      <div id="wrapCart" class="grid__item  text-center large--text-right">
         <a href="/cart" id="CartToggle">
           <span class="icon-fallback-text">
             <span class="icon icon-cart" aria-hidden="true"></span>
@@ -116,10 +118,14 @@ Add the page template as a class for easy page or template specific styling.
             {% endif %}
           </p>
           {% endif %}
-
+      </div>
+       <div id="wrapSearch" class="grid__item  text-center large--text-right"> <!-- large--one-third -->
+         <div class="nav-search">
+          {% include 'search-bar' %}
         </div>
-       
-    </div>
+      </div>
+       </div>
+   
   </div>
   <header class="site-header" role="banner">
     <div class="wrapper">
