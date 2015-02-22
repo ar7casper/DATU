@@ -1,7 +1,10 @@
 // Activate and moderate Zoom effect on product pages
 //  *	www.elevateweb.co.uk/image-zoom
 
-$('#ProductPhotoImg').elevateZoom();
+$('#ProductPhotoImg').elevateZoom({
+	zoomType: 'inner',
+	cursor: 'crosshair'
+});
 
 
 
