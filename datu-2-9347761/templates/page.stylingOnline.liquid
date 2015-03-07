@@ -1,47 +1,62 @@
 <!-- /templates/page.liquid -->
 <div class="grid noMargin">
 
-  <div class="grid__item noPaddingLeft">
+	<div class="grid__item noPaddingLeft">
 
-    <h1>{{ page.title }}</h1>
+		<h1>{{ page.title }}</h1>
 
-    {% comment %}
-      Regular page content goes here.
-    {% endcomment %}
-    <div class="rte">
-      <!-- {{ page.content }} -->
-      <div class="stylingJumbo">
-      	<p class="stylingJumboText">
-      		<span class="spanShopping">Styling Online</span>
-      		<span class="spanBy">by</span>
-      		<span class="spanName">Nir Colcher</span>
-      	</p>
-      </div>
-      <article id="daEvent">
-      	<div class="stHeadline">
-			<h4>הארוע שאני מתלבטת מה ללבוש אליו הוא:</h4>
+		{% comment %}
+		Regular page content goes here.
+		{% endcomment %}
+		<div class="rte">
+			<!-- {{ page.content }} -->
+			<div class="stylingJumbo">
+				<p class="stylingJumboText">
+					<span class="spanShopping">Styling Online</span>
+					<span class="spanBy">by</span>
+					<span class="spanName">Nir Colcher</span>
+				</p>
+			</div>
+			<form>
+				<article id="daEvent">
+					<div class="stHeadline">
+						<h4>הארוע שאני מתלבטת מה ללבוש אליו הוא:</h4>
+					</div>
+					<div class="daOptions">
+						<input type="checkbox" id="wedding">
+						<label for="wedding">חתונה</label>
+						<input type="checkbox" id="meeting">
+						<label for="meeting">פגישה עסקית</label>
+						<input type="checkbox" id="date">
+						<label for="date">דייט רומנטי</label>
+						<input type="checkbox" id="party">
+						<label for="party">מסיבה</label>
+						<input type="checkbox" id="casual">
 
-      	</div>
+						<label for="casual">יומ יומי</label>
 
-      </article>
+					</div>
 
-      <article id="daLike">
-      	<div class="stHeadline">
-			<h4>אני אוהבת:</h4>
+				</article>
 
-      	</div>
+				<article id="daLike">
+					<div class="stHeadline">
+						<h4>אני אוהבת:</h4>
 
-      </article>
+					</div>
 
-      <article id="daFigure">
-      	<div class="stHeadline">
-			<h4>מבנה גופי:</h4>
+				</article>
 
-      	</div>
+				<article id="daFigure">
+					<div class="stHeadline">
+						<h4>מבנה גופי:</h4>
 
-      </article>
-    </div>
+					</div>
 
-  </div>
+				</article>
+			</form>
+		</div>
+
+	</div>
 
 </div>
