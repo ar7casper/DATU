@@ -1,3 +1,81 @@
+@media all {
+	.order-summary-recap .product-list{
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+	}
+	.product-list .product__price {
+		float: left;
+		margin-left: 5.5em;
+	}
+	span.total-line__name {
+		float: right;
+	}
+	strong.total-line__price {
+		float: left;
+	}
+	span.payment-due__label {
+		float: right;
+	}
+	.payment-due__price {
+		float: left;
+	}
+	.payment-due__currency {
+		float: left;
+		margin-right: 0;
+		margin-left: 0.75em;
+	}
+	.shop a {
+		background-image: url(//cdn.shopify.com/s/files/1/0732/3507/t/2/assets/logo.png?16447990107876245658);
+		background-size: 105px 45px;
+		min-width: 105px;
+		min-height: 45px;
+		display: block;
+	}
+	h1.shop__name {
+		display: none;
+	}
+	input[type="tel"] {
+		direction:ltr;
+		text-align:right;
+	}
+	.shipping-option__price {
+		right: auto;
+		left: 5em;
+	}
+	.field.field--has-radio-button.shipping-option {
+		padding-right: 1em;
+	}
+	.section__header .section__edit-link {
+		float: left;
+	}
+}
+@media (min-width: 600px){
+	.order-summary-recap .product-list {
+		padding-left: 13.5%;
+		padding-right: 13.5%;
+	}
+	.field__icon {
+		left: 4.25em;
+		right:auto;
+	}
+	.shipping-option__price {
+right: auto;
+left: 5em;
+}
+}
+@media (min-width: 800px){
+	.order-summary-recap .product-list {
+		padding-left: 12.5%;
+		padding-right: 12.5%;
+		width: 60%;
+		margin: 0 auto;
+	}
+	.shipping-option__price {
+right: auto;
+left: 5em;
+}
+}
+
 .field label {
 float: right;
 direction:rtl;
@@ -16,4 +94,11 @@ float: right;
 }
 .call-to-action .btn {
 float: left;
+}
+img.product__image {
+float: right;
+}
+.product-list .product--has-image {
+padding-left: 2.7em;
+padding-right: 0! important;
 }
