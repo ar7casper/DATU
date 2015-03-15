@@ -18,70 +18,105 @@
 				</p>
 			</div>
 			<form>
-				<article id="daEvent">
-				<div>
-					<div class="stHeadline">
-						<h4>הארוע שאני מתלבטת מה ללבוש אליו הוא:</h4>
+				<div class="grid__item">
+					<div class="grid">
+						<article id="daEvent">
+							<div>
+								<div class="stHeadline">
+									<h4>הארוע שאני מתלבטת מה ללבוש אליו הוא:</h4>
+								</div>
+								<div class="daOptions">
+									<input type="checkbox" id="wedding">
+									<label for="wedding">חתונה</label>
+									<input type="checkbox" id="meeting">
+									<label for="meeting">פגישה עסקית</label>
+									<input type="checkbox" id="date">
+									<label for="date">דייט רומנטי</label>
+									<input type="checkbox" id="party">
+									<label for="party">מסיבה</label>
+									<input type="checkbox" id="casual">
+
+									<label for="casual">יומ יומי</label>
+
+								</div>
+							</div>
+						</article>
+
+						<article id="daLike">
+							<div>
+								<div class="stHeadline">
+									<h4>אני אוהבת:</h4>
+
+								</div>
+								<input type="checkbox" id="elegant">
+								<label for="elegant">מראה אלגנטי</label>
+								<input type="checkbox" id="fashionable">
+								<label for="fashionable">לוק אופנתי ומעודכן</label>
+								<input type="checkbox" id="jolly">
+								<label for="jolly">שמחת חיים וצבע</label>
+								<input type="checkbox" id="solid">
+								<label for="solid">מראה סולידי</label>
+								<input type="checkbox" id="other">
+								<label for="other">אחר:</label>
+								<input type="text" id="otherText" placeholder="מה בא לך?">
+							</div>
+						</article>
+
+						<article id="daFigure">
+							<div>
+								<div class="stHeadline">
+									<h4>מבנה גופי:</h4>
+
+								</div>
+								<input type="checkbox" id="skinny"><label for="skinny">רזה</label>
+								<input type="checkbox" id="average"><label for="average">ממוצע</label>
+								<input type="checkbox" id="juicy"><label for="juicy">עסיסי</label>
+							</div>
+						</article>
+						<article id="daAge">
+							<div>
+								<div class="stHeadline">
+									<h4>הגיל שלי</h4>
+								</div>
+								<input type="text" id="daAgeText" placeholder="אל תדאגי, אני יודעת לשמור סוד :)">
+							</div>
+						</article>	
 					</div>
-					<div class="daOptions">
-						<input type="checkbox" id="wedding">
-						<label for="wedding">חתונה</label>
-						<input type="checkbox" id="meeting">
-						<label for="meeting">פגישה עסקית</label>
-						<input type="checkbox" id="date">
-						<label for="date">דייט רומנטי</label>
-						<input type="checkbox" id="party">
-						<label for="party">מסיבה</label>
-						<input type="checkbox" id="casual">
-
-						<label for="casual">יומ יומי</label>
-
-					</div>
-</div>
-				</article>
-
-				<article id="daLike">
-				<div>
-					<div class="stHeadline">
-						<h4>אני אוהבת:</h4>
-
-					</div>
-				<input type="checkbox" id="elegant">
-				<label for="elegant">מראה אלגנטי</label>
-				<input type="checkbox" id="fashionable">
-				<label for="fashionable">לוק אופנתי ומעודכן</label>
-				<input type="checkbox" id="jolly">
-				<label for="jolly">שמחת חיים וצבע</label>
-				<input type="checkbox" id="solid">
-				<label for="solid">מראה סולידי</label>
-				<input type="checkbox" id="other">
-				<label for="other">אחר:</label>
-				<input type="text" id="otherText" placeholder="מה בא לך?">
 				</div>
-				</article>
-
-				<article id="daFigure">
-				<div>
-					<div class="stHeadline">
-						<h4>מבנה גופי:</h4>
-
+				<div class="grid__item">
+					<div class="grid">
+						<article id="daFreeText">
+							<div>
+								<div class="stHeadline">
+									<h4>יש לי עוד מה לומר:</h4>
+								</div>
+								<textarea id="daFreeTextText" placeholder="בקשות מיוחדות? צבעים?"></textarea>
+							</div>
+						</article>
 					</div>
-				<input type="checkbox" id="skinny"><label for="skinny">רזה</label>
-				<input type="checkbox" id="average"><label for="average">ממוצע</label>
-				<input type="checkbox" id="juicy"><label for="juicy">עסיסי</label>
 				</div>
-				</article>
-				<article id="daAge">
-				<div>
-					<div class="stHeadline">
-						<h4>הגיל שלי</h4>
+				<div class="grid__item">
+					<div class="grid">
+						<article id="daUploadPhotos">
+							<div>
+								<div class="stHeadline">
+									<h4>אלו הבגדים מהארון שלי. אני רוצה להשלים את הלוק עם הבגדים האלו:</h4>
+								</div>
+								<textarea id="daFreeTextText" placeholder="בקשות מיוחדות? צבעים?"></textarea>
+							</div>
+						</article>
 					</div>
-					<input type="text" id="daAgeText" placeholder="אל תדאגי, אני יודעת לשמור סוד :)">
-					</div>
-				</article>	
-			</form>
-		</div>
-
+				</div>
+				<div class="grid__item">
+					<div class="grid">
+					<input type="submit">
+						
+					</input>
+				</div>
+			</div>
+		</form>
 	</div>
+
+</div>
 
 </div>
