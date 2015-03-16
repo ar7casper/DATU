@@ -63,6 +63,16 @@
   {% endcomment %}
   <a href="{{ product.url | within: collection }}" class="grid__image">
     <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}">
+    {% if on_sale %}
+      <div class="daOnSale">
+        <div>SALE</div>
+      </div>
+{% endif %}
+{% if sold_out %}
+  <div class="daSoldOut">
+    <div> Sold Out </div>
+    </div>
+{%endif %}
   </a>
 
   <p class="h6">
