@@ -671,7 +671,7 @@ html {
 body {
   background-color: $colorBody;
   background: url({{'background.jpg' | asset_url}}) no-repeat;
-  background-size:100%;
+  background-size:cover;
 }
 
 .wrapper {
@@ -1957,7 +1957,8 @@ height: auto;
 max-height: 64px;
 }
 div#footerFirstRow {
-margin-bottom: 2vw;
+margin-bottom: 2em;
+width:100%;
 }
 .bottomMenu {
 display: block;
@@ -2119,7 +2120,7 @@ float: right;
 }
 .sizeGuide{
   background: url({{'datu_stripes_03.gif' | asset_url}}) no-repeat;
-}
+} 
 .noMargin>div {
 float: right;
 }
@@ -2407,7 +2408,7 @@ margin-bottom: 0;
 .daSale {
 color: white;
 font-family: 'Dosis';
-font-size: 10rem;
+font-size: 10em;
 direction: ltr;
 text-align: left;
 line-height: 1em;
@@ -2419,7 +2420,7 @@ padding-left: 5%;
 .daStylingOnline {
 color: black;
 font-family: 'Dosis';
-font-size: 7rem;
+font-size: 7em;
 direction: ltr;
 text-align: left;
 line-height: 1em;
@@ -2459,6 +2460,17 @@ display:block;
   height: 35vw;
   max-height:495px;
   
+}
+@media only screen and (max-width: 480px) {
+  .daSale {
+    font-size: 12vw;
+  }
+.daStylingOnline{
+  font-size: 8vw;
+}
+img.triangleWhite, img.triangleBlack{
+  width:1em;
+}
 }
 /* **********************
 ****** Normal Images *****

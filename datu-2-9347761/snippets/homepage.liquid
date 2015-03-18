@@ -4,22 +4,22 @@
 	{% case link.title %}
 		{% when 'sale' %}
 		{% capture content %} <p>30% Off</p> {% endcapture %}
-		{% capture daClass %} class="grid__item large--three-tenths small--one-whole daSmall daSale" {% endcapture %}
+		{% capture daClass %} class="grid__item three-tenths daSmall daSale" {% endcapture %}
 		{% when 'new' %}
 		{% capture content %}<div class="sectionImage" ></div><div class="holder"><div class="new">New</div><img class='triangleWhite' src="{{ 'triangleWhite.png' | asset_url }}" /></div>{% endcapture %}
-		{% capture daClass %} class="grid__item grid__item large--seven-tenths small--one-whole daBig daImg1 daNew" {% endcapture %}
+		{% capture daClass %} class="grid__item grid__item seven-tenths daBig daImg1 daNew" {% endcapture %}
 		{% when 'lookbook' %}
 		{% capture content %}<div class="sectionImage" ></div><div class="holder"><div class="lookbook">Lookbook</div><img class='triangleWhite' src="{{ 'triangleWhite.png' | asset_url }}" /></div>{% endcapture %}
-		{% capture daClass %} class="grid__item large--seven-tenths small--one-whole daBig daLookbook daImg2" {% endcapture %}
+		{% capture daClass %} class="grid__item seven-tenths daBig daLookbook daImg2" {% endcapture %}
 		{% when 'styling online' %}
 		{% assign content = '<p>Styling</p><p> Online</p>' %}
-		{% capture daClass %} class="grid__item large--three-tenths small--one-whole daSmall daStylingOnline " {% endcapture %}
+		{% capture daClass %} class="grid__item three-tenths daSmall daStylingOnline " {% endcapture %}
 		{% when 'gallery' %}
 		{% capture content %}<div class="sectionImage" ></div><div class="holder"><div class="gallery">Gallery</div><img class='triangleBlack' src="{{ 'triangle.png' | asset_url }}" /></div>{% endcapture %}
-		{% capture daClass %} class="grid__item large--four-tenths small--one-whole daSmall daGallery clear" {% endcapture %}
+		{% capture daClass %} class="grid__item four-tenths daSmall daGallery clear" {% endcapture %}
 		{% when 'blog' %}
 		{% capture content %}<div class="sectionImage" ></div><div class="holder"><div class="blog">Blog</div><img class='triangleBlack' src="{{ 'triangle.png' | asset_url }}" /></div>{% endcapture %}
-		{% capture daClass %} class="grid__item large--six-tenths small--one-whole daBig daBlog daImg3" {% endcapture %}
+		{% capture daClass %} class="grid__item six-tenths daBig daBlog daImg3" {% endcapture %}
 	{% endcase %}
 	
 	<li {{daClass}} > 
