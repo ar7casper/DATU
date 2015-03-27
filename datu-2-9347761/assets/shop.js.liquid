@@ -181,7 +181,9 @@ timber.productImageSwitch = function () {
     timber.cache.$thumbImages.on('click', function(evt) {
       evt.preventDefault();
       var newImage = $(this).attr('href');
+
       timber.switchImage(newImage, null, timber.cache.$productImage);
+
     });
   }
 };
@@ -190,6 +192,8 @@ timber.switchImage = function (src, imgObject, el) {
   // Make sure element is a jquery object
   var $el = $(el);
   $el.attr('src', src);
+  $el.attr('data-zoom-image', src);
+  zoomProduct();
 };
 
 timber.responsiveVideos = function () {
