@@ -3,11 +3,15 @@
 
 var zoomProduct = function(){
 	$('#ProductPhotoImg').elevateZoom({
+	gallery:'thumbs',
 	zoomType: 'inner',
-	cursor: 'crosshair'
+	cursor: 'crosshair',
+	galleryActiveClass: 'active'
+//	imageCrossfade: true
 });
 };
 zoomProduct();
+//$("#zoom_03").elevateZoom({gallery:'gallery_01', cursor: 'pointer', galleryActiveClass: 'active', imageCrossfade: true, loadingIcon: 'http://www.elevateweb.co.uk/spinner.gif'}); 
 
 
 
@@ -59,7 +63,9 @@ function setHover(){
 }
 // Initializors
 //setHover();
-
+$(document).ready(function(){
+	$('.sizeGuide').fancybox();
+});
 $(window).load(function(){
 	setHeight();
 	datuVip();
