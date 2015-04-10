@@ -90,7 +90,7 @@
     {% endif %}
     {% if on_sale %}
       {% assign sale_price =  product.compare_at_price | money %}
-      <br>{{ 'products.product.on_sale_from_html' | t: price: sale_price }}
+      <span id="crossedPrice">{{ 'products.product.on_sale_from_html' | t: price: sale_price }}</span>
     {% endif %}
   </p>
 

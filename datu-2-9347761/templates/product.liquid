@@ -18,7 +18,7 @@ For more information on these Scheme.org tags, visit:
 
   <div class="grid product-single noMargin" >
 
- <div id="thumbs" class="grid__item large--one-eighth text-center">
+ <div id="thumbs" class="grid__item medium--one-eighth large--one-eighth small--one-eighth text-center">
   {% comment %}
   Create thumbnails if we have more than one product image
   {% endcomment %}
@@ -38,7 +38,7 @@ For more information on these Scheme.org tags, visit:
 </div>
     
 
-    <div id="mainImage" class="grid__item large--one-half text-center">
+    <div id="mainImage" class="grid__item medium--one-half large--one-half small--seven-eighths text-center">
       <div class="product-single__photos" id="ProductPhoto">
         {% assign featured_image = product.selected_or_first_available_variant.featured_image | default: product.featured_image %}
         <img src="{{ featured_image | img_url: '1024x1024' }}" alt="{{ featured_image.alt | escape }}" id="ProductPhotoImg" data-zoom-image="{{ featured_image | img_url: 'master' }}"> <!-- {{ featured_image | img_url: 'master' }} -->
@@ -50,7 +50,7 @@ For more information on these Scheme.org tags, visit:
  </div>
 
 
-<div id="descColumn" class="grid__item large--one-third">
+<div id="descColumn" class="grid__item medium--one-third large--one-third small--one-whole">
 
       <h1 itemprop="name">{{ product.title }}</h1>
      
@@ -130,6 +130,36 @@ For more information on these Scheme.org tags, visit:
           </button>
         </form>
       <!-- Product Details -->
+      <!-- Item Details -->
+      <div class="modelData">
+      <h5>מידות הבגד</h5>
+      <div class="modelName">
+      <div class="attr">שם</div>
+      <div>{{product.metafields.model.name}}</div>
+      </div>
+      <div class="modelHeight">
+         <div class="attr">גובה</div>
+         <div>{{product.metafields.model.modelheight}}</div>
+      </div>
+      <div class="modelBreast">
+        <div class="attr">חזה</div>
+        <div>{{product.metafields.model.breast}}</div>
+      </div>
+      <div class="modelWaist">
+        <div class="attr">מותן</div>
+        <div>{{product.metafields.model.waist}}</div>
+      </div>
+      <div class="modelHips">
+        <div class="attr">אגן</div>
+        <div>{{product.metafields.model.hips}}</div>
+      </div>
+      <div class="cm">* המידות הן בס״מ</div>
+       </div>
+       <!-- Material -->
+       <div class="modelData">
+         <h5>הרכב בד</h5>
+       </div>
+      <!-- Model Details -->
       <div class="modelData">
       <h5>על הדוגמנית</h5>
       <div class="modelName">
